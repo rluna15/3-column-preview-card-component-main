@@ -1,1 +1,44 @@
-@use '../util' as *;
+@use "../util" as *;
+@use "../globals/" as *;
+
+.card {
+  width: 920px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+
+  & > div {
+    padding: 48px;
+
+    & > button {
+      margin-top: 75px;
+    }
+  }
+
+  & > div > h1 {
+    color: $Very-light-gray;
+    font-size: 35px;
+    font-family: $Big-Shoulders;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px 0 40px 0;
+  }
+
+  & > div > p {
+    color: $Transparent-white;
+    font-family: $Lexend-Deca;
+  }
+
+  &-orange {
+    background-color: $Bright-orange;
+  }
+
+  &-cyan {
+    background-color: $Dark-cyan;
+  }
+
+  &-dark-cyan {
+    background-color: $Very-dark-cyan;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../globals/" as *;
+
+.btn {
+  width: 140px;
+  height: 48px;
+  border: none;
+  border-radius: 23px;
+  background-color: $Very-light-gray;
+  font-family: $Lexend-Deca;
+  cursor: pointer;
+
+  &-orange {
+    color: $Bright-orange;
+
+    &:hover {
+        color: $Very-light-gray;
+        background-color: $Bright-orange;
+        border: 2px solid $Very-light-gray;
+    }
+  }
+
+  &-cyan {
+    color: $Dark-cyan;
+
+    &:hover {
+        color: $Very-light-gray;
+        background-color: $Dark-cyan;
+        border: 2px solid $Very-light-gray;
+    }
+  }
+
+  &-dark-cyan {
+    color: $Very-dark-cyan;
+
+    &:hover {
+        color: $Very-light-gray;
+        background-color: $Very-dark-cyan;
+        border: 2px solid $Very-light-gray;
+    }
+  }
+}
