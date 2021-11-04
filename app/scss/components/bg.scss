@@ -1,4 +1,5 @@
-@use 'globals' as *;
+@use '../util/' as *;
+@use '../globals/' as *;
 
 .bg {
     width: 100vw;
@@ -7,4 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint-down(small) {
+        height: 100%;
+    }
 }

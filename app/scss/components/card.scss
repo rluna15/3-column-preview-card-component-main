@@ -41,4 +41,19 @@
   &-dark-cyan {
     background-color: $Very-dark-cyan;
   }
+
+  @include breakpoint-down(small){
+    width: 327px;
+    height: 1326px;
+    flex-direction: column;
+    margin: 88px 0px 88px 0;
+
+    & > div {
+      // padding: 48px;
+  
+      & > button {
+        margin-top: 30px;
+      }
+    }
+  }
 }
